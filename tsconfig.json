@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "useDefineForClassFields": true,
+    "types": [
+      "vite-plugin-pwa/client",
+    ],
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowJs": false,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [".eslintrc.cjs", "vite.config.ts", "src"],
+  "exclude": ["node_modules", "dist", "dev-dist", "coverage"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
